@@ -32,7 +32,7 @@ function intro() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to connect with me
+              Feel free to connect with me!
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

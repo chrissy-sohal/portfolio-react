@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+import Particle from "../particle";
 import Techstack from "./icons";
 import Aboutcard from "./cards";
-import aboutImg from "../../Assets/about.png";
+import aboutImg from "../../assets/kali.jpg";
 
 
 function About() {
