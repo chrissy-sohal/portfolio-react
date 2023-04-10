@@ -6,11 +6,12 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
+  AiOutlineProject,
   AiOutlineUser,
+  AiOutlineMail,
+  AiOutlineFileText
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -71,7 +72,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiOutlineProject
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
@@ -84,7 +85,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineFileText style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
           
@@ -94,7 +95,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
+                <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>

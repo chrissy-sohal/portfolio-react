@@ -33,8 +33,7 @@ const Contact = () => {
     <section id="contact">
       <h5>Get In Touch</h5>
       <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :)
+      Have an interesting project or want to know more about me? I'd love to hear from you!
       </h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
@@ -42,8 +41,8 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>rasiftaghizade@gmail.com</h5>
-            <a href="mailto:mekomerikomg@gmail.com">Send a message</a>
+            <h5>cmart131@yahoo.com</h5>
+            <a href="mailto:cmart131@yahoo.com">Send a message</a>
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
@@ -68,7 +67,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Thank you!</span>}
         </form>
       </div>
     </section>
