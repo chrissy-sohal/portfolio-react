@@ -1,4 +1,5 @@
 import React from "react";
+import "./projects.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./cards";
 import workout from "../../assets/homepage.jpg";

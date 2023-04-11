@@ -1,4 +1,5 @@
 import React from "react";
+import "./footer.css";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,

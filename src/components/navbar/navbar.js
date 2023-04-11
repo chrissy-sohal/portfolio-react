@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 import {
   AiOutlineHome,
   AiOutlineProject,
@@ -73,9 +74,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineProject
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                  style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
