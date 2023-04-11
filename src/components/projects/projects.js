@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./cards";
-import Particle from "../particle";
 import workout from "../../assets/homepage.jpg";
 import brewery from "../../assets/vecteezyBeerDayBackgroundfv0621_generated.jpg";
 import editor from "../../assets/b88f983b-06ae-4405-82f7-265ecc17e8d5.png";
@@ -12,7 +11,6 @@ import team from "../../assets/team-company-profile-template.jpeg";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           Most Recent Projects

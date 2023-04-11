@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/logo.jpg";
-import Particle from "../particle";
 import Intro from "./home-intro";
 
 
@@ -9,7 +8,6 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-      <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
