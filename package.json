@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrissy-martin/portfolio-react.git"
+    "url": "https://github.com/chrissy-martin/portfolio-react.git"
   },
   "author": "Chrissy Martin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrissy-martin/portfolio-react/issues"
+    "url": "https://github.com/chrissy-martin/portfolio-react.git"
   },
-  "homepage": "https://github.com/chrissy-martin/portfolio-react#readme",
+  "homepage": "https://chrissy-martin.github.io/portfolio-react/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-pdf/renderer": "^3.1.9",
