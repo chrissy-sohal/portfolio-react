@@ -13,8 +13,12 @@
     height: auto !important;
   }
   
+  .project-card title {
+    font-size: 40px;
+
+  }
   .project-card-view {
-    box-shadow: 0 4px 5px 3px #004b63 !important;
+    box-shadow: 8px 10px 8px 15px #072d3a !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
@@ -24,55 +28,19 @@
   .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px #0ec3ff !important;
+    box-shadow: 4px 6px 6px 8px #62ffed !important;
   }
-  
-  .blog-card {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    height: auto !important;
-  }
-  
-  .blog-card-view {
-    background-color: transparent !important;
-    box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-    color: white !important;
-    transition: all 0.5s ease 0s !important;
-    height: 100% !important;
-  }
-  
-  .blog-link {
-    color: white !important;
-    text-decoration: none !important;
-  }
-  
-  .blog-link:hover {
-    cursor: pointer !important;
-  }
-  
-  .blog-card-view:hover {
-    transform: scale(1.02) !important;
-    overflow: hidden !important;
-    box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-  }
-  
+
   .card-img-top {
     padding: 20px !important;
     opacity: 0.8 !important;
     border-radius: 10px !important;
   }
   
-  .blog-img {
-    padding: 0px !important;
-    opacity: 0.8 !important;
-    border-radius: 0px !important;
-  }
-  
+
   .btn-primary {
     color: #fff !important;
-    background-color: #004b63!important;
+    background-color: #083f52!important;
     border-color: #022b39 !important;
   }
   

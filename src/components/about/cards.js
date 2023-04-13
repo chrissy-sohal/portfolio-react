@@ -7,10 +7,10 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "justify" }} className="about-text">
           Hello! My name is Chrissy Martin.
             <br />
-            I am an animal care professional currently enrolled in the UW Full Stack Bootcamp, in the hopes of switching careers. In my spare time, you can find me at studying at a local coffee shop or out looking for seals in the Pudget sound!
+            I am an animal care professional with a background in public speaking and psychology currently pursuing an intensive full stack certificate from the University of Washington. I am honing my skills in HTML5, CCS, Bootstrap, JavaScript, jQuery, and a bit of Python and MySQL. I plan to create and maintain websites while also developing iOS and Android apps. I am able to collaborate and work with a team while solving problems in high-stress environments. I am looking to bring my attention to detail and technical skills to a company to grow and become a valuable asset. I’m excited to leverage my skills as part of a fast-paced, quality-driven team. 
             <br />
             <br />
             Fun Facts About Chrissy!

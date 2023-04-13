@@ -37,13 +37,10 @@ const Contact = () => {
   };
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
       <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
-            <p>
-              Feel free to connect with me!
-            </p>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -66,6 +63,7 @@ const Contact = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="mailto:cmart131@yahoo.com"
@@ -79,10 +77,15 @@ const Contact = () => {
             </ul>
           </Col>
         </Row>
-      <h5>
+<br>
+</br>
+<br></br>
+      <h3>
       Have an interesting project or want to know more about me? I'd love to hear from you!
-      </h5>
-      <h2>Contact Me</h2>
+      </h3>
+      <h3>
+      Get in touch!
+      </h3>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
