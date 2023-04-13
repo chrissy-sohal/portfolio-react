@@ -5,7 +5,7 @@ import Projects from "../projects/projects";
 import Footer from "../footer/footer";
 import Resume from "../resume/resume";
 import Contact from "../contact/contact"
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Scroll, Route } from "react-router-dom";
 import ScrollToTop from "../scroll";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";

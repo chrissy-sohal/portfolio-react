@@ -1,5 +1,5 @@
 .sticky {
-    background-color: #1b1a2ea9 !important;
+    background-color: #0c3739  !important;
     transition: all 0.3s ease-out 0s !important;
     box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
     backdrop-filter: blur(15px) !important;
@@ -20,7 +20,7 @@
   
   .navbar-toggler span {
     display: block !important;
-    background-color: #be50f4 !important;
+    background-color: #084447 !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;
@@ -67,7 +67,7 @@
     .navbar {
       padding: 1rem 2rem !important;
       font-size: 1.4rem !important;
-      background-color: #181a27 !important;
+      background-color: #052c37 !important;
     }
     .navbar-nav .nav-item a::after {
       display: none !important;
@@ -117,7 +117,7 @@
     height: 5px;
     width: 0;
     border-radius: 16px;
-    background: #c95bf5;
+    background: #09bbc8;
     bottom: 1px;
     left: 0;
     z-index: -1;
