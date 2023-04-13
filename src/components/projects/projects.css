@@ -14,7 +14,7 @@
   }
   
   .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    box-shadow: 0 4px 5px 3px #004b63 !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
@@ -24,7 +24,7 @@
   .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+    box-shadow: 0 4px 4px 5px #0ec3ff !important;
   }
   
   .blog-card {
@@ -72,14 +72,14 @@
   
   .btn-primary {
     color: #fff !important;
-    background-color: #623686 !important;
-    border-color: #623686 !important;
+    background-color: #004b63!important;
+    border-color: #022b39 !important;
   }
   
   .btn-primary:hover {
     color: #fff !important;
-    background-color: #6d20c5d7 !important;
-    border-color: #6d20c5d7 !important;
+    background-color:#3594b3 !important;
+    border-color: #76d4f3 !important;
   }
   .btn:focus {
     outline: none !important;
@@ -87,7 +87,7 @@
   }
   .project-heading {
     color: white !important;
-    font-size: 2.3em !important;
+    font-size: 45px !important;
     font-weight: 500 !important;
     padding-top: 10px !important;
   }

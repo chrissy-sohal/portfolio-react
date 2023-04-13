@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./cards";
+import ProjectCards from "./cards";
 import workout from "../../assets/homepage.jpg";
 import brewery from "../../assets/vecteezyBeerDayBackgroundfv0621_generated.jpg";
 import editor from "../../assets/b88f983b-06ae-4405-82f7-265ecc17e8d5.png";
@@ -19,7 +19,7 @@ function Projects() {
       
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={workout}
               isBlog={false}
               title="Workout Nation"
@@ -30,7 +30,7 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={brewery}
               isBlog={false}
               title="US Brewery Finder"
@@ -41,7 +41,7 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={team}
               isBlog={false}
               title="Team Profile Generator"
@@ -52,7 +52,7 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={weather}
               isBlog={false}
               title="Weather Dashboard"
@@ -63,7 +63,7 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={editor}
               isBlog={false}
               title="Text Editor"
@@ -75,7 +75,7 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            <ProjectCards
               imgPath={employee}
               isBlog={false}
               title="Employee Tracker"
