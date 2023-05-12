@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import { Container, Row, Col } from "react-bootstrap";
-import Techstack from "./icons";
+
 import Aboutcard from "./cards";
 import aboutImg from "../../assets/kali.jpg";
 
@@ -32,11 +32,6 @@ function About() {
             <img src={aboutImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Technical Skills 
-        </h1>
-
-        <Techstack />
 
       </Container>
     </Container>

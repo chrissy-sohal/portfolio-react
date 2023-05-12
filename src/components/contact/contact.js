@@ -91,7 +91,6 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>cmart131@yahoo.com</h5>
             <a href="mailto:cmart131@yahoo.com">Send a message</a>
           </article>
         </div>
@@ -114,9 +113,8 @@ const Contact = () => {
             name="message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+          <button type="submit" className="btn btn-primary"><a href="mailto:cmart131@yahoo.com">Send message</a>
+            </button>
           {message && <span>Thank you!</span>}
         </form>
       </div>

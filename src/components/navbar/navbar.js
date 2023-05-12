@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import logo from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import {
@@ -12,7 +11,6 @@ import {
   AiOutlineMail,
   AiOutlineFileText
 } from "react-icons/ai";
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -37,7 +35,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+         
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -70,7 +68,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineProject
@@ -91,7 +89,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/contact"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact

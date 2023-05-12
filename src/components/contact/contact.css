@@ -50,7 +50,7 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background:none;
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -60,7 +60,7 @@
 
 .contact__option:hover {
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color:black;
 }
 
 .contact__option-icon {
@@ -75,7 +75,7 @@
 }
 
 .contact__option h5 {
-    color: var(--color-light);
+    color: white;
 }
 
 .contact__option h4 {
@@ -98,9 +98,9 @@ textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid black;
     resize: none;
-    color: var(--color-white);
+    /* color:whitesmoke; */
 }
 
 @media screen and (max-width: 1024px){
@@ -110,9 +110,7 @@ textarea {
     }
 }
 
-.btn btn-primary {
-  color: rgb(4, 55, 55);  
-}
+
   
 @media screen and (max-width: 600px){
     .container.contact__container {
