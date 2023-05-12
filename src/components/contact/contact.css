@@ -3,6 +3,11 @@
     padding-top: 25px;
     color: rgb(255, 255, 255) !important;
   }
+
+  .heading {
+    margin-top: 100px;
+    justify-content: center;
+  }
   
   .home-about-social-links {
     justify-content: center !important;
@@ -15,10 +20,10 @@
   .home-social-icons {
     position: relative !important;
     display: inline-block !important;
-    width: 40px !important;
-    height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
     text-align: center !important;
-    font-size: 60px !important;
+    font-size: 70px !important;
     line-height: 2em !important;
     border-radius: 80% !important;
     transition: 0.5s !important;
@@ -26,82 +31,22 @@
  
   .social-icons {
     display: inline-block !important;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   
   .icon-colour {
     color: #05242f !important;
   }
   
-
-.container.contact__container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-} 
-
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.2rem;
+.button {
+    margin-left: 400px;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 40px;
+  
 }
 
-.contact__option {
-    background:none;
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.contact__option:hover {
-    background: transparent;
-    border-color:black;
-}
-
-.contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact__option a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-}
-
-.contact__option h5 {
-    color: white;
-}
-
-.contact__option h4 {
-    font-weight: 500;
-}
-
-form span {
-    font-size: 0.8rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid black;
-    resize: none;
-    /* color:whitesmoke; */
-}
 
 @media screen and (max-width: 1024px){
     .container.contact__container {
