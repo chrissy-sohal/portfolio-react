@@ -17,15 +17,19 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+          <Button className="btn"
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", fontSize: "40px"}}
           >
             <AiOutlineDownload />
-            &nbsp;Resume
+            Resume
           </Button>
+          <br></br>
+          <br></br>
+          <br></br>
+          
         </Row>
         <h1 className="project-heading">
           Technical Skills 

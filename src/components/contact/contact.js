@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 import React, { useRef, useState } from 'react';
 import { Row, Col } from "react-bootstrap";
 import {
@@ -11,7 +12,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-// import { MdOutlineEmail } from 'react-icons/md';
+
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -19,12 +20,10 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [textArea, setTextArea] = useState('')
 
-  const [err, setErr] = useState(false)
+  const [err] = useState(false)
   const [ setMessage] = useState(false);
   const formRef = useRef();
-
   const handleSubmit = (e) => {
-
     e.preventDefault();
     setMessage(true);
     emailjs
@@ -44,11 +43,7 @@ const Contact = () => {
       );
 
     e.target.reset();
-    e.preventDefault()
-    if(!fullName || !email || !textArea) {
-      setErr(true)
   };
-}
   return (
     <section id="contact">
       <Row>
@@ -130,6 +125,5 @@ const Contact = () => {
 </section>
   );
 };
-
 
 export default Contact;
