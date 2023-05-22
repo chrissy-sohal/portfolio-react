@@ -1,10 +1,10 @@
 import './contact.css';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
+// import Button from 'react-bootstrap/Button'
+// import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
-import React, { useRef, useState } from 'react';
+import React from "react";
+// import React, { useRef, useState } from 'react';
 import { Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
@@ -13,37 +13,37 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [fullName, setFullName] = useState('')
-  const [email, setEmail] = useState('')
-  const [textArea, setTextArea] = useState('')
+  // const [fullName, setFullName] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [textArea, setTextArea] = useState('')
 
-  const [err] = useState(false)
-  const [ setMessage] = useState(false);
-  const formRef = useRef();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-    emailjs
-      .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
-        formRef.current,
-        'X7K7ebhIeOy3YwHki'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  // const [err] = useState(false)
+  // const [ setMessage] = useState(false);
+  // const formRef = useRef();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setMessage(true);
+  //   emailjs
+  //     .sendForm(
+  //       'service_k2qawqh',
+  //       'template_c6rkpn6',
+  //       formRef.current,
+  //       'X7K7ebhIeOy3YwHki'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
 
-    e.target.reset();
-  };
+  //   e.target.reset();
+  // };
   return (
     <section id="contact">
       <Row>
@@ -93,7 +93,7 @@ const Contact = () => {
       <h3 style={{ textAlign: "center" }}>
       Get in touch!
       </h3>
-      <br></br>
+      {/* <br></br>
       <br></br>
   <div className="container contact__container">
       <Form onSubmit={handleSubmit}>
@@ -121,7 +121,7 @@ const Contact = () => {
     <Button type="submit" className="button">Submit</Button>
       </Form>
 
-  </div>
+  </div> */}
 </section>
   );
 };
