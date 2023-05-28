@@ -87,12 +87,14 @@ const Contact = () => {
           </Col>
         </Row>
 <br></br>
+<div>
       <h3>
       Have an interesting project or want to know more about me? I'd love to hear from you!
       </h3>
       <h3 style={{ textAlign: "center" }}>
       Get in touch!
       </h3>
+</div>
       {/* <br></br>
       <br></br>
   <div className="container contact__container">
@@ -119,9 +121,9 @@ const Contact = () => {
       }
 </div>
     <Button type="submit" className="button">Submit</Button>
-      </Form>
+      </Form>*/}
 
-  </div> */}
+  {/* </div>  */}
 </section>
   );
 };
