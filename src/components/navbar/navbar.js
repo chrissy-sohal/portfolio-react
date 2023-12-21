@@ -1,105 +1,136 @@
+ 
+// Importing files from Material-UI
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
-import "./navbar.css";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import MenuIcon from "@material-ui/icons/Menu";
+import Button from "@material-ui/core/Button";
+import useMediaQuery from "@mui/material/useMediaQuery";
+ 
 import {
-  AiOutlineHome,
-  AiOutlineProject,
-  AiOutlineUser,
-  AiOutlineMail,
-  AiOutlineFileText
-} from "react-icons/ai";
-
-function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
-
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
-
-  return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
-      <Container>
-        <Navbar.Brand href="/" className="d-flex">
-         
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/projects"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineProject
-                  style={{ marginBottom: "2px" }} /> Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFileText style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-          
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+    List,
+    ListItem,
+    ListItemText,
+    Collapse,
+} from "@mui/material";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+ 
+// Using Inline Styling
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+}));
+ 
+// Exporting Default Navbar to the App.js File
+export default function Navbar() {
+    const classes = useStyles();
+    const small = useMediaQuery("(max-width:600px)");
+    const full = useMediaQuery("(min-width:600px)");
+       
+    const [open, setOpen] = useState(false);
+ 
+    const handleClick = () => {
+        setOpen(!open);
+    };
+ 
+    return (
+        <div className={classes.root}>
+            <AppBar position="static">
+                <Toolbar variant="dense">
+                    {small && (
+                        <>
+                            <List>
+                                <ListItem button>
+                                    <Button
+                                        onClick={
+                                            handleClick
+                                        }
+                                    >
+                                        <MenuIcon />
+                                        {open ? (
+                                            <ExpandLess />
+                                        ) : (
+                                            <ExpandMore />
+                                        )}
+                                    </Button>
+                                    <Typography
+                                        variant="h6"
+                                        color="inherit"
+                                        onClick={() => {
+                                            console.log(
+                                                "logo clicked"
+                                            );
+                                            setOpen(false);
+                                        }}
+                                    >
+                                        Geeks for Geeks
+                                    </Typography>
+                                </ListItem>
+                                <Collapse
+                                    in={open}
+                                    timeout="auto"
+                                    unmountOnExit
+                                >
+                                    <List
+                                        component="div"
+                                        disablePadding
+                                    >
+                                        <ListItem button>
+                                            <ListItemText primary="Home" />
+                                        </ListItem>
+                                        <ListItem button>
+                                            <ListItemText primary="About" />
+                                        </ListItem>{" "}
+                                        <ListItem button>
+                                            <ListItemText primary="Gallery" />
+                                        </ListItem>
+                                        <ListItem button>
+                                            <ListItemText primary="Checkout" />
+                                        </ListItem>
+                                        <ListItem button>
+                                            <ListItemText primary="Contact" />
+                                        </ListItem>
+                                    </List>
+                                </Collapse>
+                            </List>
+                        </>
+                    )}
+ 
+                    {full && (
+                        <>
+                            <Typography
+                                variant="h6"
+                                color="inherit"
+                            >
+                                Geeks for Geeks
+                            </Typography>
+                            <Button color="inherit">
+                                Home
+                            </Button>
+ 
+                            <Button color="inherit">
+                                About
+                            </Button>
+                            <Button color="inherit">
+                                Gallery
+                            </Button>
+                            <Button color="inherit">
+                                Checkout
+                            </Button>
+                            <Button color="inherit">
+                                Contact
+                            </Button>
+                        </>
+                    )}
+                </Toolbar>
+            </AppBar>
+        </div>
+    );
 }
-
-export default NavBar;

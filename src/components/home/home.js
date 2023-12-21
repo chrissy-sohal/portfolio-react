@@ -14,7 +14,7 @@ function Home() {
               justifyContent: "center"
             }}>
             <h1 style={{ fontSize: "50px", textAlign: "center" }}>
-              CHRISSY MARTIN
+              CHRISSY SOHAL
             </h1>
             <h2 style={{ fontSize: "35px"}}>
               FULL STACK WEB DEVELOPER
