@@ -53,7 +53,7 @@ const Contact = () => {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/chrissy-martin"
+                  href="https://github.com/chrissy-sohal"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -64,7 +64,7 @@ const Contact = () => {
             
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/chrissy-martin/"
+                  href="https://www.linkedin.com/in/chrissy-sohal/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

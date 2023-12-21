@@ -12,7 +12,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Built and Designed by Chrissy Martin</h3>
+          <h3>Built and Designed by Chrissy Sohal</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright 2023 </h3>
@@ -21,7 +21,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/chrissy-martin"
+                href="https://github.com/chrissy-sohal"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -41,7 +41,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/chrissy-martin/"
+                href="https://www.linkedin.com/in/chrissy-sohal/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
