@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "1.0.0",
   "description": "Personal Portfolio for updated projects",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrissy-martin/portfolio-react.git"
+    "url": "https://github.com/chrissy-sohal/portfolio-react.git"
   },
-  "author": "Chrissy Martin",
+  "author": "Chrissy Sohal",
   "license": "ISC",
   "bugs": {
-    "url": "https://chrissy-martin.github.io/portfolio-react/"
+    "url": "https://chrissy-sohal.github.io/portfolio-react/"
   },
-  "homepage": "https://chrissy-martin.github.io/portfolio-react/",
+  "homepage": "https://chrissy-sohal.github.io/portfolio-react/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-pdf/renderer": "^2.2.0",
